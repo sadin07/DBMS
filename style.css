@@ -67,7 +67,7 @@ body{
 }
 
 .container form{
-    background-color: #fff;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,6 +86,12 @@ body{
     width: 100%;
     outline: none;
 }
+.form-container form p{    
+    position: relative;
+    color: #07949c;
+    font: bold 40px 'Cookie', cursive;
+}
+
 
 .form-container{
     position: absolute;
@@ -105,7 +111,30 @@ body{
     transform: translateX(100%);
 }
 
- 
+.Register{
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.container.active .Register{
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+}
+
+@keyframes move{
+    0%, 49.99%{
+        opacity: 0;
+        z-index: 1;
+    }
+    50%, 100%{
+        opacity: 1;
+        z-index: 5;
+    }
+}
 
  
 .toggle-container{
@@ -170,12 +199,7 @@ body{
     right: 0;
     transform: translateX(0);
 }
-.toggle-right p{
-    font:large black;
-}
-.toggle-right p a{
-    font:bold large black;
-}
+
 
 .container.active .toggle-right{
     transform: translateX(200%);
