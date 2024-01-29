@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+}
+li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: #f7f1f6;
+    cursor: pointer;
+}
+h1{
+    color: rgb(252, 230, 202);
+}
+.side-bar{
+    position: fixed;
+    background:#025161;
+    width:20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.side-bar .logo{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.side-bar .li{
+    font-size: 24px;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+}
+.side-bar .li:hover{
+ background:white;
+ color: #47143a;
+}
+.comtainer{
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    background: #f1f1f1;
+}
+.container .header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 10vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgb(0,0,0,0.2)
+}
+.container .header .nav{
+    width: 90%;
+    display: flex;
+    align-items: center;  
+}
+.container .header .nav .search{
+    display: flex;
+    align-items: center;
+}
+.container .header .nav .search input{

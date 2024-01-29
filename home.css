@@ -74,7 +74,7 @@ text-shadow: #000;
     height: calc(1vh);
     background:linear-gradient(45deg , #5078b500 ,#311dcf00);
     position: absolute;
-    /* top: 80px; */
+
     right: 110px;
     padding-top: 20%;
     display: flex;
@@ -105,9 +105,10 @@ footer{
     
 }
 .footer-distributed{
-	background-color: #292c2f;
+	background-color: #260120;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
+    border-radius: 20px;
 	width: 100%;
 	text-align: left;
 	font: bold 16px sans-serif;
