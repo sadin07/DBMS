@@ -38,11 +38,17 @@ h1{
     display: flex;
     align-items: center;
 }
-.side-bar .li:hover{
- background:white;
- color: #47143a;
+.side-bar li img{
+    border-radius: 30px;
 }
-.comtainer{
+.side-bar li:hover > img{
+     
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+ 
+}
+.container{
     position: absolute;
     right: 0;
     width: 80vw;
@@ -71,3 +77,5 @@ h1{
     align-items: center;
 }
 .container .header .nav .search input{
+
+}
