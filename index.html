@@ -21,11 +21,9 @@
          </div>
 
         <div class="form-container sign-in">
-        
            <form>
-            <p>Hello Student!</p>
+            <p class="hello-student" >Hello Student!</p>
            </form>
-         
         </div>
         <div class="toggle-container">
             <div class="toggle">
@@ -34,15 +32,15 @@
                     <br>
                   <p> Continue to<a href="homepage.html"> Home page</a></p>
                 </div>
-                <form onsubmit="handleSubmit()">
+                <form onsubmit="handleSubmit(event)">
                 <div class="toggle-panel toggle-right">
                     <h1>Register Your Profile</h1>
                     <input type="text" name="Rollno" placeholder="Rollno" required>
-                    <input type="text" name="S_Name" placeholder="S_Name" required>
-                    <input type="text" name="Class" placeholder="Your class" required>
-                    <input type="text" name="Address" placeholder="Address" required>
-                    <input type="text" name="parentsNumber" placeholder="ParentsNumber" required>
-                    <input type="text" name="parentsName" placeholder="ParentsNAME" required>
+                    <input type="text" name="S_Name"  placeholder="S_Name" required>
+                    <input type="text" name="Class"  placeholder="Your class" required>
+                    <input type="text" name="Address"  placeholder="Address" required>
+                    <input type="text" name="parentsNumber"  placeholder="ParentsNumber" required>
+                    <input type="text" name="parentsName"  placeholder="ParentsNAME" required>
                     <button class="hidden" type="Submit" id="register">Submit</button>
                 </div>
                 </form>

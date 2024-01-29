@@ -14,8 +14,24 @@ li{
     color: #f7f1f6;
     cursor: pointer;
 }
+a{
+   text-decoration: none; 
+}
 h1{
     color: rgb(252, 230, 202);
+}
+.btn{
+    background: #025161;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+.btn:hover{
+    color: #025161;
+    background: white;
+    padding: 3px 8px;
+    border: 2px solid #025161;
 }
 .side-bar{
     position: fixed;
@@ -42,11 +58,9 @@ h1{
     border-radius: 30px;
 }
 .side-bar li:hover > img{
-     
     padding: 10px;
     width: 60px;
     height: 60px;
- 
 }
 .container{
     position: absolute;
@@ -73,9 +87,47 @@ h1{
     align-items: center;  
 }
 .container .header .nav .search{
+    flex: 3;
+    display: flex;
+
+}
+.container .header .nav .search input [type=text]{
+    border: none;
+    background: #f1f1f1;
+    padding: 10px;
+    width: 50%;    
+}
+.container .header .nav .search button{
+    width: 40px;
+    height: 40px;
+    border: none;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
-.container .header .nav .search input{
+.container .header .nav .search button img{
+    width:30px;
+    height:30px;
+    
+}
+.container .header .nav .user{
+    flex: 1;
+    background: bisque;
 
+}
+ 
+.info{
+    display: flex;
+    margin-top: 80px;
+
+}
+.info .card{
+    width: 25%;
+    margin: 10px;
+    background: #fff;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 5px 5px;
+    cursor: pointer;
 }
